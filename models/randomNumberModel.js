@@ -27,6 +27,7 @@ const generateRandomNumber = () => {
   return {
     period,
     number,
+    timestamp: Date.now(), // Add a timestamp for the frontend to calculate time
     ...numberMappings[number],
   };
 };
